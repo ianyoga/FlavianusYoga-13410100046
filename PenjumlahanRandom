@@ -1,0 +1,27 @@
+import java.io.*;
+public class PenjumlahanRandom
+
+{
+		public static void main (String[]args) throws IOException
+		{
+			BufferedReader br=new BufferedReader (new InputStreamReader(System.in));
+			
+			int angka1=(int)(Math.random());
+			int angka2=(int)(Math.random());
+			System.out.println ( angka1+angka2);
+			System.out.println ("Masukkan hasilnya= ");
+			int hasil= Integer.parseInt (br.readLine()); 
+			
+			
+			if (angka1+angka2 == hasil)
+			{
+				System.out.println ("NIlai anda=10");
+			}
+			else
+			
+				System.out.println ("NIlai anda=0");
+				
+			
+					
+		}
+}
